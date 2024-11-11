@@ -1,0 +1,57 @@
+﻿CSC 221
+Network Server Monitor:
+
+
+Group Members & Roles:
+Ki: Software Developer
+Lucy: Test Engineer
+Brayan: Software Designer
+
+
+Problem Statement:
+Computer servers can sometimes encounter fatal errors that may lead to problems like data loss, hardware damage, and downtime. Such issues could negatively affect the server’s performance and ability to communicate with its clients, leaving it unable to process requests or provide services. 
+
+
+Proposed Solution:
+We plan to create a program that will ping selected servers and evaluate their vital hardware and software health metrics. Our aim is to preemptively scan servers for conditions that are likely to lead to issues, so we can intervene and stop problems before they even arise. 
+
+
+Technology Stack:
+* Coding Language: Python
+* Library: EasySNMP
+
+
+Roles & Responsibilities:
+Ki - Software Developer: Main coder and will be responsible for coding the most important, central parts of the program. 
+Lucy - Test Engineer: Responsible for ensuring that the program runs smoothly and without error. 
+Brayan - Software Designer: Responsible for making sure the program is designed with efficiency in mind, in such a manner that values effectiveness and organization.
+
+
+Timeline & Milestones:
+11/01/24 → Project Proposal
+Nov. 4 -10 → Design Document and Technology Stack
+Nov. 11 - 17 →
+Nov. 18 - 24 → 
+Nov. 25 - Dec. 1 → 
+Dec. 2 - 8 → Perform final testing
+
+
+
+
+
+
+
+
+Potential Risks & Challenges:
+* Problems with the given timeline and ability to create a functional program within the allotted time. 
+* Issues with communication between group members. 
+
+
+Conclusion:
+Our goal is to create a program that can successfully monitor a server for potential issues, so that those issues can be resolved before they have the chance to cause damage to the system. 
+
+
+Document Prepared By:
+Lucy Vlasis
+Date:
+11/1/2024
