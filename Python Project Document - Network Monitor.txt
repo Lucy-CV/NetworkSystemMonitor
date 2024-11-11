@@ -1,0 +1,103 @@
+﻿CSC 221
+Ki, Lucy, Brayan
+
+
+
+
+Python Server Monitor
+Design Document & Pseudocode
+
+
+
+
+        
+PROJECT OVERVIEW
+
+
+________________
+
+
+
+
+* Intent ~
+   * Program will use the EasySNMP library to make SNMP requests to a predefined server and monitor core system properties
+* Libraries necessary ~
+   * EasySNMP, “a Python library that provides a full-featured SNMP client API” (easysnmp.com)
+* Intended Audience ~
+   * Server administrators and network maintenance professionals
+* For what? ~
+   * Servers play an incredibly important role in hosting crucial information we use on a daily basis. Server uptime is non-negotiable and IT professionals need a simple and effective way to ensure this as well as diagnose issues and failures to return normal functionality in a swift manner. 
+* What do we do with it? ~
+   * We will be using the program to probe a remote VM we set up in the cloud and return core system data.
+
+
+
+
+
+
+
+
+PSEUDOCODE
+EasySNMP pseudocode is derived heavily from docs on easysnmp.com as most operations are already clearly defined, our application adds functionality to choose metrics shown and conveniently layout data retrieved from snmp pings.
+________________
+
+
+
+
+from easysnmp import literally everything
+import schedule
+
+
+
+
+hostname = (prompt user for the ip they’d like to monitor)
+
+
+String = community string the server is using (necessary for snmp to work)
+
+
+OID (Object ID) = array Example: {(cpu_util, 1.0.6.3.5.4.6), (uptime, 1.0.4.6.3.7.3), (cpu_fan_speed, 1.6.5.2.7.4.5)}
+
+
+session = Session(hostname, community string, version)         # takes 3 args
+
+
+metric_selection = input(print list of OIDs in human readable format)
+
+
+frequency = input(what is the frequency the ping should be run)
+
+
+count = input(how many pings)
+
+
+take metric selection number and turn it into index from OID array
+
+
+
+
+
+
+convert OID name into OID decimal
+
+
+inject the OID into an session.get(oid) and retrieve values, store them into a value list
+
+
+while count:
+if number of values is 1:
+print(OID_name + “: “ + value)
+elif number of values > 1:
+        for num in range (0, oid.length()):
+                print(OID_name[d] + “: “ + value)
+else:
+        die()
+
+
+if error:
+        print error code
+else:
+        dont()
+
+
+pause for (frequency)
